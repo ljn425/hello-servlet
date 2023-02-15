@@ -12,4 +12,10 @@ public class ServletApplication {
 		SpringApplication.run(ServletApplication.class, args);
 	}
 
+	// spring.mvc.view.prefix=/WEB-INF/views/
+	// spring.mvc.view.suffix=.jsp properties 에 등록시 아래 메소드 자동 등록후 호출
+	//	@Bean
+	//	ViewResolver internalResourceViewResolver() {
+	//		return new InternalResourceViewResolver("/WEB-INF/views/", ".jsp");
+	//	}
 }
